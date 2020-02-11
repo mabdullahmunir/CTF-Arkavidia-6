@@ -1,0 +1,12 @@
+.idea
+.o 
+
+### Python ###
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+*$py.class
+
+
+node_modules
+
+.DS_Store
