@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <!-- Meta -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- Title -->
+        <title>Browse</title>
+        <!-- Static files -->
+        <link rel="stylesheet" href="/static/css/base.css">
+        <link rel="stylesheet" href="/static/css/browse.css">
+    </head>
+    <body>
+        %s
+        <!-- Main content -->
+        <div class="main content">
+            <h1 class="page-title">Search Book</h1>
+            <!-- Search input -->
+            <div class="row">
+                <form action="search" method="get" id="search-form">
+                    <input id="search-input" type="text" class="input" id="name" name="name" title="name" placeholder="Input search items...">
+                    <div>
+                        <button class="btn btn-solid" type="submit">Search</button>
+                    </div>
+                </form>
+            </div>
+            <div id="alert-info" class="alert-danger">
+                <div><img src="/static/assets/times-solid.svg" onclick="closeAlert();"></div>
+                <div><p id="alert-msg"></p></div>
+            </div>
+        </div>
+    </body>
+    <script>
+        let form = document.getElementById('search-form');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            if (document.getElementById('search-input').value === '') {
+                document.getElementById("alert-info").style.display = "block";
+                document.getElementById("alert-msg").innerHTML = "Please input correctly before submit!";
+            } else form.submit();
+        });
+        function closeAlert() {
+            document.getElementById('alert-info').style.display = 'none';
+        }
+    </script>
+</html>

@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  web:
+    build:
+      context: .
+    restart: always
+    ports:
+      - ${HOST}:1234
+    networks:
+      - www
+
+networks:
+  www:

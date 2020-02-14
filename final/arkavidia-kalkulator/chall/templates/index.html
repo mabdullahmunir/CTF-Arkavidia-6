@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block style_ %}
+<style>
+</style>
+{% endblock %}
+{% block content_ %}
+{% if result %}
+  <div class="row title">
+    <div class="col s6">
+      <h4>Arkavidia</h4>
+      <h6>{{ result }}
+      </h6>
+    </div>
+  </div>
+{% elif hacker %}
+  <div class="row title">
+    <div class="col s6">
+      <h4>Arkavidia</h4>
+      <h6>please stop
+      <img src="/static/images/hackerman.jpg" alt="hacker">
+      </h6>
+    </div>
+  </div>
+{% else %}
+  <div class="row title">
+    <div class="col s6">
+      <h4>Arkavidia</h4>
+      <h6>Achmad merupakan bendahara Arkavidia 31. Suatu hari, Achmad dimintai untuk menghitung berapa <b>cuan</b> yang sudah didapatkan dari Arkavidia. Hingga akhirnya Achmad menciptakan sebuah kalkulator yang dinamai Arkavidia Kalkulator. Check it out <a href="/?page=calc">here</a>
+    </div>
+  </div>
+{% endif %}
+{% endblock %}
+{% block script_ %}
+  <script>
+  </script>
+{% endblock %}

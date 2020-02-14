@@ -1,0 +1,142 @@
+.box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.box-outer-form {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+    width: 35%;
+    background: #5ecaff;
+    border-radius: 5px;
+    padding: 2em 0.5em;
+}
+
+.box-inner-form {
+    border-radius: 5px;
+    padding: 0.5em;
+    display: flex;
+    flex-flow: column;
+    background-image: url('../assets/bg.jpg');
+    background-size: 50%;
+}
+
+.row.form {
+    margin: 0.5em 0;
+    vertical-align: center;
+}
+
+div[class*="col-"].form > input {
+    line-height: 1.5em;
+}
+
+textarea {
+    width: 100%;
+    margin-top: 2px;
+    margin-bottom: 0;
+    padding: 1px;
+    font-family: 'Lato', sans-serif;
+}
+
+input {
+    font-family: 'Lato', sans-serif !important;
+}
+
+:-moz-placeholder, ::-moz-placeholder, ::-ms-input-placeholder, ::-webkit-input-placeholder {
+    font-family: 'Lato', sans-serif;
+}
+
+.form {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.flag {
+    font-size: 1.2em;
+    margin-left: 0.5em;
+    color: red;
+}
+
+.submit-button {
+    color: #ffac15;
+    border: 2px #ffac15 solid;
+    font-size: 1.07em;
+    font-weight: bold;
+    background-color: #fff;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    transition: all 0.3s ease;
+    color: white;
+    background-color: #ffac15;
+}
+
+.right-text {
+    text-align: right;
+}
+
+.text-input {
+    background: white;
+    padding: 0.2em;
+    border-radius: 3px;
+    border: 1px grey solid;
+    width: 90%;
+}
+
+/* Alert modal */
+.alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    border-radius: 5px;
+    padding: 1em;
+    display: none;
+}
+.alert-danger > div:first-child {
+    position: absolute;
+}
+.alert-danger img {
+    cursor: pointer;
+    width: 12px;
+    height: auto;
+}
+#alert-msg {
+    text-align: center;
+    margin: 0;
+}
+.alert-show {
+    display: block;
+}
+
+.url-link {
+    font-weight: bold;
+    color: black;
+}
+
+.url-link:hover {
+    color: gray;
+}
+
+/* Media queries */
+@media screen and (max-width: 1024px) {
+    .box-outer-form {
+        width: 50%;
+    }
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    .box-outer-form {
+        width: 60%;
+    }
+}
+
+/* Media queries */
+@media screen and (max-width: 500px) {
+    .box-outer-form {
+        width: 90%;
+    }
+}

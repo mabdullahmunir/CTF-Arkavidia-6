@@ -1,0 +1,231 @@
+@import 'grid.css';
+@import 'fonts.css';
+@import 'browse.css';
+@import 'detail.css';
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 0 25vw;
+    box-sizing: border-box;
+}
+
+/* Page content */
+.content {
+    flex-direction: column;
+}
+
+/* Page titles */
+.page-title {
+    color: rgb(255, 115, 0);
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+.page-subtitle {
+    color: rgb(16, 54, 71);
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+/* Button */
+.btn {
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 10px 25px;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+.btn-solid {
+    border: 0;
+    color: white;
+    background-color: rgb(23, 171, 240);
+}
+.btn-solid:hover {
+    background-color: rgb(17, 126, 177);
+}
+
+.btn-white {
+    border: 0;
+    color: rgb(71, 71, 71);
+    background-color: rgb(182, 182, 182);
+}
+.btn-white:hover {
+    color: white;
+    background-color: rgb(95, 95, 95);
+}
+
+.btn-outline {
+    border: 1px solid rgb(255, 115, 0);
+    color: rgb(255, 115, 0);
+    background-color: rgb(255, 255, 255);
+}
+.btn-outline:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 115, 0);
+}
+
+/* Input */
+.input {
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 5px;
+    padding: 10px;
+    /* width: 50%; */
+}
+
+textarea {
+    font-family: 'Lato', sans-serif;
+}
+
+::placeholder {
+    color: rgb(192, 192, 192);
+}
+
+.select {
+    border: 1px solid rgb(112, 112, 112);
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* Title bar */
+.logobar {
+    flex-direction: row;
+    background-color: rgb(0, 189, 236);
+}
+
+.logo, .username {
+    padding: 16px 0;
+}
+
+.logo {
+    width: 50%;
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+}
+.logo > p:first-child {
+    margin: 0;
+    color: rgb(255, 196, 0);
+}
+.logo > p:last-child {
+    margin: 0;
+    color: white;
+}
+
+.userbar {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.username {
+    font-size: 20px;
+    margin: 0 10px;
+    text-align: right;
+    color: white;
+    text-decoration: underline;
+}
+
+.logout {
+    width: 30px;
+    cursor: pointer;
+    padding: 0 16px;
+    background-color: rgb(235, 125, 0);
+    color: white;
+    transition: 0.2s;
+}
+.logout:hover {
+    background-color: rgb(189, 101, 0);
+}
+
+.logout > svg {
+    margin-top: 13px;
+    margin-bottom: 13px;
+    /* height: 30px;
+    width: auto; */
+}
+
+/* Menu */
+.menu {
+    flex-direction: row;
+    background-color: rgb(2, 169, 211);
+}
+
+.menu-item {
+    text-decoration: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: white;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    transition: 0.2s;
+    font-variant: small-caps;
+}
+.menu-item:hover {
+    background-color: rgb(0, 129, 161);
+}
+
+.menu-active {
+    background-color: rgb(235, 125, 0);
+}
+.menu-active:hover {
+    background-color: rgb(189, 101, 0);
+}
+
+hr {
+    margin: 0;
+    border: 1px solid rgb(0, 47, 84);
+}
+
+/* Error page */
+.error-main {
+    text-align: center;
+}
+
+.error-main > h1 {
+    font-size: 15em;
+    margin: 120px 0 30px 0;
+    color: rgb(4, 94, 167);
+}
+
+.error-main > h2 {
+    font-size: 2em;
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        font-size: 90%;
+    }
+    .main {
+        width: 100%;
+        padding: 0;
+    }
+    .content {
+        padding: 0 10vh;
+    }
+    .logo {
+        padding: 16px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .content {
+        padding: 0 5vh;
+    }
+
+}

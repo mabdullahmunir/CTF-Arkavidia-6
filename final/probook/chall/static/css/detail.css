@@ -1,0 +1,207 @@
+.detail-content {
+    margin-right: 2em;
+}
+
+.detail-title {
+    margin-bottom: 0;
+}
+
+.detail-author {
+    margin: 0;
+    font-size: 1em;
+}
+
+.detail-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.detail-image > div {
+    margin: 0 auto;
+}
+
+.detail-image__photo {
+    margin-top: 2em !important;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.detail-image__photo > img {
+    width: 100%;
+    height: auto;
+}
+
+.detail-image__rate {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+/* Order */
+.order-dropdown {
+    display: flex;
+    flex-direction: row;
+}
+
+.order-dropdown > div:first-child {
+    margin-right: 10px;
+}
+
+.order-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.order-modal__placeholder {
+    position: fixed;
+    z-index: 99;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.24);
+}
+
+.order-modal {
+    background-color: white;
+    width: 30vw;
+    height: 120px;
+    margin: 30vh auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.order-modal > div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.order-modal > div:first-child {
+    width: 60%;
+}
+.order-modal > div:first-child > img {
+    width: 40%;
+    height: auto;
+    margin: 20px;
+}
+
+.order-modal > div:nth-child(2) > p:first-child {
+    font-weight: bold;
+}
+.order-modal > div:nth-child(2) > p {
+    margin: 3px;
+}
+
+.order-modal > div:last-child {
+    width: 40%;
+    display: block;
+}
+.order-modal > div:last-child > img {
+    cursor: pointer;
+    width: 20%;
+    height: auto;
+    margin-top: 15px;
+    margin-left: 60%;
+}
+
+/* Stars */
+.detail-image__stars {
+    padding-top: 10px;
+}
+
+.stars-fill, .stars-outline {
+    display: flex;
+    flex-direction: row;
+}
+.stars-fill {
+    margin-top: -34px;
+    width: 0px;
+    overflow: hidden;
+}
+
+.stars-outline > img, .stars-fill > img {
+    width: 30px;
+    margin: 2px;
+    height: 30px;
+}
+
+/* Review */
+.review {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+}
+
+.review-photo {
+    margin-right: 15px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+.review-photo > img {
+    width: 100%;
+    height: auto;
+}
+
+.review > div:nth-child(2) > h1 {
+    margin: 0;
+    font-size: 1.3em;
+}
+.review > div:nth-child(2) > p {
+    margin: 5px 0;
+}
+
+.review > div:last-child {
+    margin-left: 15px;
+}
+.review > div:last-child > img {
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+}
+.review > div:last-child > p {
+    font-size: 1em;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.col-2.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    word-wrap: break-word;
+}
+
+@media screen and (max-width: 600px) {
+    .full-mobile[class*="col-"] {
+        width: 100%;
+        margin: 0;
+    }
+    .full-mobile.row {
+        flex-direction: column;
+    }
+    .order-modal {
+        width: 60vh;
+    }
+    .review-photo {
+        width: 40px;
+        height: 40px;
+    }
+    .review > div:last-child {
+        margin-left: 0;
+        height: 80px;
+    }
+    .review > div:last-child > p {
+        font-size: 0.8em;
+    }
+}

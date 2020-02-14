@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block style_ %}
+<style>
+</style>
+{% endblock %}
+{% block content_ %}
+<div class="row title">
+  <div class="col s6">
+    <h4>Arkavidia Calculator</h4>
+    <form action="/calc" method="POST">
+      <input type="text" name="calc" id="calc" placeholder="2+2">
+    </form>
+  </div>
+</div>
+{% endblock %}
+{% block script_ %}
+  <script>
+  </script>
+{% endblock %}

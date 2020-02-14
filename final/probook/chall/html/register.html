@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Meta -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- Title -->
+        <title>Register</title>
+        <!-- Static files -->
+        <link rel="stylesheet" href="/static/css/base.css">
+        <link rel="stylesheet" href="/static/css/register_login.css">
+    </head>
+    <body>
+        <div class="container-full box-container">
+            <div class="box-outer-form">
+                <div class="box-inner-form">
+                    <h1 style="align-self: center">R E G I S T E R</h1>
+                    <form id="register-form" method="post" action="register">
+                        <div class="row form">
+                            <div class="col-4 form right-text">Username</div>
+                            <div class="col-8 form">
+                                <input class="text-input" type="text" id="username" name="username" title="username">
+                                <span class="flag" id="flag-username-input"></span>
+                            </div>
+                        </div>
+                        <div class="row form">
+                            <div class="col-4 form right-text">Password</div>
+                            <div class="col-8 form">
+                                <input class="text-input" type="password" id="password" name="password" title="password">
+                            </div>
+                        </div>
+                        <input type="submit" id="submit-form" style="display: none">
+                    </form>
+                    <div class="row" style="margin-top: 0.7em">
+                        <a href="/login" class="url-link" style="margin-left: 1.5em">Already have an account?</a>
+                    </div>
+                    <div class="row form" style="justify-content: center; margin-top: 1.2em">
+                        <label for="submit-form" class="btn btn-outline" id="submit-register">REGISTER</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
